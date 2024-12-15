@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-color: green;
+            font-family: Verdana;
+            text-align: center;
+        }
+        form{
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1> Neural Nexus Survey Form </h1>
+    <form>
+        <div>
+            <label for="name">
+                Name
+            </label>
+
+            <input type="text" id = "name" placeholder="Enter your name"/>
+            </div>
+
+            <div>
+                <label for="age">
+                    Age 
+                  
+                </label>
+                <input type="text"  id="age" placeholder="Enter your age"/>
+            </div>
+            
+            <div><label for="emai">
+                Email 
+                
+            </label>
+            <input type="text" id = "email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <label for="text">
+                Which Option describes you
+
+            </label>
+            <select name="role" id="role">
+                <option value="student"> student</option>
+                <option value="Intern">Intern</option>
+                <option value="Professional">Professional</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="form-control">
+                Would you reccomend oriental to your friends and family ? 
+            </label >
+            <label for="reccomend-1">
+                <input type="radio" id="reccomend-1" > yes </input>
+            </label>
+            <label for="reccomend-2">
+                <input type="radio" id="reccomend-2" > No </input>
+            </label>
+            
+            <label for="reccomend-3">
+                <input type="radio" id="reccomend-3"> Maybe </input>
+            </label>
+        </div>
+
+        <div>
+            <label for="form-control">
+                Languages and Frameworks known (Check all that apply)
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" id="inp-1"> C</input>
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" id="inp-2">C++</input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" id = "inp-3">Java</input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" id="inp-4">Python</input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" id="inp-5">Javascript</input>
+            </label>
+        </div>
+
+        <div>
+            <label for="form-control">
+                Any comments or suggestions
+            </label>
+            <textarea name="comments" id="comments" placeholder="Enter your comments here">
+
+            </textarea>
+        </div>
+
+            <button type="submit" val="submit" >
+                submit
+            </button>
+
+      
+            
+
+
+        
+    </form>
+    
+</body>
+</html>
