@@ -1,0 +1,26 @@
+# Kuberns.com deployment configuration for static HTML portfolio site
+
+# Set the root directory where the application files are located
+root_directory: "."
+
+# Specify this is a static site, not a Python/Django application
+type: static
+
+# Build configuration
+build:
+  # No build command needed for static HTML site
+  command: ""
+  
+# Postbuild configuration - no database migrations needed for static site
+postbuild:
+  command: ""
+
+# Static file serving configuration
+static:
+  # Serve files from the root directory
+  directory: "."
+  # Entry point for the application
+  index: "index.html"
+
+# Environment configuration
+environment: production
