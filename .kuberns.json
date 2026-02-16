@@ -1,0 +1,15 @@
+{
+  "root_directory": ".",
+  "type": "static",
+  "build": {
+    "command": ""
+  },
+  "postbuild": {
+    "command": ""
+  },
+  "static": {
+    "directory": ".",
+    "index": "index.html"
+  },
+  "environment": "production"
+}
