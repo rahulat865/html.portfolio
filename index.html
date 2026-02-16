@@ -1,37 +1,209 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My First website</title>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rahul Raj | Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1> Rahul Raj's Portfolio</h1>
-        <h2> I'm a Web developer</h2>
-        <hr>
-        <h3><a href="./public/movie-ranking.html" > Movie Ranking Project</a></h3>
-        <img src="./assets/images/movie-ranking.png" height="200">
-        <br>
-        <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-        <img src="./assets/images/birthday-invite.png" height="200">
-        <hr>
-        <a href="./public/about.html">About Me</a>
-        <a href="./public/contact.html"> Contact Me</a>
+        <header class="hero">
+            <nav class="nav">
+                <a class="logo" href="#top">RR</a>
+                <div class="nav-links">
+                    <a href="#achievements">Achievements</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
 
+            <div id="top" class="hero-content">
+                <p class="eyebrow">3rd year engineering student</p>
+                <h1>Rahul Raj</h1>
+                <h2>I build clean, fast, and human-friendly web experiences.</h2>
+                <p class="lead">Currently sharpening my frontend craft through real projects and experiments. Details coming soon.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#achievements">See achievements</a>
+                    <a class="btn ghost" href="https://www.linkedin.com/in/rahul-raj-a3317a246/">Contact me</a>
+                </div>
+                <div class="hero-meta">
+                    <span>Based in India</span>
+                    <span>Open to internships</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="achievements" class="section achievements">
+                <div class="section-header">
+                    <h3>Achievements</h3>
+                    <p>Click an achievement to preview photos or videos. I will add the real media soon.</p>
+                </div>
+                <div class="achievements-grid">
+                    <article class="achievement-card">
+                        <div class="achievement-media">
+                            <img src="./assets/images/movie-ranking.png" alt="Achievement preview placeholder">
+                        </div>
+                        <div class="achievement-body">
+                            <h4>Hackathon Finalist</h4>
+                            <p>Team achievement in a college-level innovation challenge.</p>
+                            <button class="text-link" data-media-type="image" data-media-src="./assets/images/movie-ranking.png" data-media-title="Hackathon Finalist">View media</button>
+                        </div>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-media">
+                            <img src="./assets/images/birthday-invite.png" alt="Achievement preview placeholder">
+                        </div>
+                        <div class="achievement-body">
+                            <h4>Workshop Speaker</h4>
+                            <p>Shared insights on frontend fundamentals with juniors.</p>
+                            <button class="text-link" data-media-type="image" data-media-src="./assets/images/birthday-invite.png" data-media-title="Workshop Speaker">View media</button>
+                        </div>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-media">
+                            <img src="./assets/images/movie-ranking.png" alt="Achievement preview placeholder">
+                        </div>
+                        <div class="achievement-body">
+                            <h4>Project Showcase</h4>
+                            <p>Recognized for UI polish during department showcase.</p>
+                            <button class="text-link" data-media-type="image" data-media-src="./assets/images/movie-ranking.png" data-media-title="Project Showcase">View media</button>
+                        </div>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-media">
+                            <img src="./assets/images/birthday-invite.png" alt="Achievement preview placeholder">
+                        </div>
+                        <div class="achievement-body">
+                            <h4>Certification</h4>
+                            <p>Completed a focused course in modern web development.</p>
+                            <button class="text-link" data-media-type="image" data-media-src="./assets/images/birthday-invite.png" data-media-title="Certification">View media</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" class="section about">
+                <div class="section-header">
+                    <h3>About me</h3>
+                    <p>I love building interfaces that feel simple and intentional.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h4>Who I am</h4>
+                        <p>A 3rd year engineering student exploring frontend development through hands-on projects and modern UI patterns.</p>
+                    </div>
+                    <div class="about-card">
+                        <h4>Education</h4>
+                        <p>B.Tech student, 3rd year, Oriental Institute of Science and Technology, Bhopal.</p>
+                    </div>
+                    <div class="about-card">
+                        <h4>What I do</h4>
+                        <p>Design and build responsive web pages, focusing on clarity, performance, and delightful details.</p>
+                    </div>
+                    <div class="about-card">
+                        <h4>What I want next</h4>
+                        <p>Internships and collaborations where I can learn fast and ship meaningful products.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills">
+                <div class="section-header">
+                    <h3>Skills snapshot</h3>
+                    <p>Core tools I am confident with today. More coming soon.</p>
+                </div>
+                <div class="pill-grid">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                    <span>Git & GitHub</span>
+                    <span>UI Prototyping</span>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact">
+                <div class="contact-card">
+                    <div>
+                        <h3>Let us build something together</h3>
+                        <p>Add your email, phone, and links later. For now, this section is ready.</p>
+                    </div>
+                    <a class="btn primary" href="mailto:youremail@example.com">Say hello</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Rahul Raj · Portfolio · 2026</p>
+            <div class="footer-links">
+                <a href="./public/about.html">About</a>
+                <a href="https://www.linkedin.com/in/rahul-raj-a3317a246/">Contact</a>
+            </div>
+        </footer>
+        <div class="media-modal" id="media-modal" aria-hidden="true">
+            <div class="media-modal-content" role="dialog" aria-modal="true" aria-labelledby="media-title">
+                <button class="media-close" type="button" aria-label="Close">Close</button>
+                <div class="media-frame" id="media-frame"></div>
+                <p class="media-title" id="media-title"></p>
+            </div>
+        </div>
+        <script>
+            const modal = document.getElementById("media-modal");
+            const mediaFrame = document.getElementById("media-frame");
+            const mediaTitle = document.getElementById("media-title");
+            const closeButton = modal.querySelector(".media-close");
+
+            function openModal(type, src, title) {
+                mediaFrame.innerHTML = "";
+                if (type === "video") {
+                    const video = document.createElement("video");
+                    video.src = src;
+                    video.controls = true;
+                    video.playsInline = true;
+                    mediaFrame.appendChild(video);
+                } else {
+                    const img = document.createElement("img");
+                    img.src = src;
+                    img.alt = title;
+                    mediaFrame.appendChild(img);
+                }
+                mediaTitle.textContent = title;
+                modal.classList.add("is-open");
+                modal.setAttribute("aria-hidden", "false");
+            }
+
+            function closeModal() {
+                modal.classList.remove("is-open");
+                modal.setAttribute("aria-hidden", "true");
+            }
+
+            document.querySelectorAll("[data-media-src]").forEach((button) => {
+                button.addEventListener("click", () => {
+                    const type = button.getAttribute("data-media-type");
+                    const src = button.getAttribute("data-media-src");
+                    const title = button.getAttribute("data-media-title");
+                    openModal(type, src, title);
+                });
+            });
+
+            closeButton.addEventListener("click", closeModal);
+            modal.addEventListener("click", (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape" && modal.classList.contains("is-open")) {
+                    closeModal();
+                }
+            });
+        </script>
     </body>
 </html>
